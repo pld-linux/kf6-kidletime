@@ -1,18 +1,18 @@
 #
 # Conditional build:
 %bcond_with	tests		# build with tests
-%define		kdeframever	6.8
+%define		kdeframever	6.9
 %define		qtver		5.15.2
 %define		kfname		kidletime
 
 Summary:	Reporting of idle time of user and system
 Name:		kf6-%{kfname}
-Version:	6.8.0
+Version:	6.9.0
 Release:	1
 License:	LGPL v2.1+
 Group:		X11/Libraries
 Source0:	https://download.kde.org/stable/frameworks/%{kdeframever}/%{kfname}-%{version}.tar.xz
-# Source0-md5:	593ae4b601369f10e9f1df7ed77e24b7
+# Source0-md5:	66b947e46d49cd20afdf06f915944b24
 URL:		http://www.kde.org/
 BuildRequires:	Qt6Core-devel >= %{qtver}
 BuildRequires:	Qt6DBus-devel >= %{qtver}
@@ -21,9 +21,9 @@ BuildRequires:	Qt6Test-devel >= %{qtver}
 BuildRequires:	Qt6WaylandClient-devel
 BuildRequires:	Qt6Widgets-devel >= %{qtver}
 BuildRequires:	cmake >= 3.16
-BuildRequires:	kf5-plasma-wayland-protocols-devel
 BuildRequires:	kf6-extra-cmake-modules >= %{version}
 BuildRequires:	ninja
+BuildRequires:	plasma-wayland-protocols-devel >= 1.15.0
 BuildRequires:	qt6-linguist >= %{qtver}
 BuildRequires:	rpmbuild(macros) >= 1.164
 BuildRequires:	tar >= 1:1.22
