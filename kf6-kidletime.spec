@@ -1,18 +1,18 @@
 #
 # Conditional build:
 %bcond_with	tests		# build with tests
-%define		kdeframever	6.18
+%define		kdeframever	6.19
 %define		qtver		5.15.2
 %define		kfname		kidletime
 
 Summary:	Reporting of idle time of user and system
 Name:		kf6-%{kfname}
-Version:	6.18.0
+Version:	6.19.0
 Release:	1
 License:	LGPL v2.1+
 Group:		X11/Libraries
 Source0:	https://download.kde.org/stable/frameworks/%{kdeframever}/%{kfname}-%{version}.tar.xz
-# Source0-md5:	8d0d5b1c0377e942da3a8e6849c8ffc2
+# Source0-md5:	6e62cd53033274d6d55cf1f7ac50e14a
 URL:		http://www.kde.org/
 BuildRequires:	Qt6Core-devel >= %{qtver}
 BuildRequires:	Qt6DBus-devel >= %{qtver}
@@ -86,7 +86,7 @@ rm -rf $RPM_BUILD_ROOT
 %doc README.md
 %{_datadir}/qlogging-categories6/kidletime.categories
 %ghost %{_libdir}/libKF6IdleTime.so.6
-%attr(755,root,root) %{_libdir}/libKF6IdleTime.so.*.*
+%{_libdir}/libKF6IdleTime.so.*.*
 %dir %{_libdir}/qt6/plugins/kf6/org.kde.kidletime.platforms
 %{_libdir}/qt6/plugins/kf6/org.kde.kidletime.platforms/KF6IdleTimeWaylandPlugin.so
 %{_libdir}/qt6/plugins/kf6/org.kde.kidletime.platforms/KF6IdleTimeXcbPlugin0.so
