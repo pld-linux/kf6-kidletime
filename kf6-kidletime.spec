@@ -1,18 +1,18 @@
 #
 # Conditional build:
 %bcond_with	tests		# build with tests
-%define		kdeframever	6.19
+%define		kdeframever	6.20
 %define		qtver		5.15.2
 %define		kfname		kidletime
 
 Summary:	Reporting of idle time of user and system
 Name:		kf6-%{kfname}
-Version:	6.19.0
+Version:	6.20.0
 Release:	1
 License:	LGPL v2.1+
 Group:		X11/Libraries
 Source0:	https://download.kde.org/stable/frameworks/%{kdeframever}/%{kfname}-%{version}.tar.xz
-# Source0-md5:	6e62cd53033274d6d55cf1f7ac50e14a
+# Source0-md5:	d259e3432db63ddea7f28f365c05e97a
 URL:		http://www.kde.org/
 BuildRequires:	Qt6Core-devel >= %{qtver}
 BuildRequires:	Qt6DBus-devel >= %{qtver}
