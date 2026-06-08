@@ -42,6 +42,12 @@ useful not only for finding out about the current idle time of the PC,
 but also for getting notified upon idle time events, such as custom
 timeouts, or user activity.
 
+%description -l pl.UTF-8
+KIdleTime jest singletonem informującym o bezczynności. Jest przydatny
+nie tylko do odczytywania bieżącego czasu bezczynności peceta, ale też
+do powiadomień o zdarzeniach bezczynności, takich jak niestandardowe
+"timeouty" czy aktywności użytkownika.
+
 %package devel
 Summary:	Header files for %{kfname} development
 Summary(pl.UTF-8):	Pliki nagłówkowe dla programistów używających %{kfname}
